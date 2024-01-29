@@ -2,7 +2,15 @@
 <script setup>
 import { ref } from "vue" // you need this to use ref()
 
-let name = ref("Name")
+let name = ref("...")
+
+
+function AddName(){
+
+name = name + Newname
+console.log (name)
+
+}
 
 </script>
 
@@ -16,10 +24,11 @@ let name = ref("Name")
 <div id="navbar" class="container">  
         <div id="title">Mohammad's bootcamp website</div>
         
+        
+        
         <div id="logo">
             <img src="./assets/cow.jpg" alt="macad cow">
-          <h2>{{ name }}</h2>
-
+          
         </div>
         
 
@@ -27,9 +36,19 @@ let name = ref("Name")
 
     <div id="flex">
 
-        <div id="sidebar" class="container"> Sidebar </div>
+        <div id="sidebar" class="container"> 
+          
+           
+        <input type={{Newname}} id="Newname" placeholder="Add your name to the list:">
+        <button id="saveButton" @click="AddName">Save</button>
+        
 
-        <div id="main" class="container"> Main </div>
+        </div>
+
+        <div id="main" class="container"> 
+           
+          <h2>{{ name }}</h2>
+        </div>
     </div>
 
 </template>
