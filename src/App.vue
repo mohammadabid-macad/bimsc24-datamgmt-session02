@@ -8,7 +8,7 @@ let Newname = ref("")
 
 function AddName(){
 
-name.value = name.value + Newname.value + " " 
+name.value = name.value + Newname.value + ", " 
 console.log (name)
 
 }
