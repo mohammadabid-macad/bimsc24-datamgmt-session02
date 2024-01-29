@@ -3,11 +3,12 @@
 import { ref } from "vue" // you need this to use ref()
 
 let name = ref("...")
+let Newname = ref("")
 
 
 function AddName(){
 
-name = name + Newname
+name.value = name.value + Newname.value
 console.log (name)
 
 }
@@ -38,8 +39,8 @@ console.log (name)
 
         <div id="sidebar" class="container"> 
           
-           
-        <input type={{Newname}} id="Newname" placeholder="Add your name to the list:">
+             
+        <input type = ”text” v-model="Newname"  placeholder="Add your name to the list:">
         <button id="saveButton" @click="AddName">Save</button>
         
 
