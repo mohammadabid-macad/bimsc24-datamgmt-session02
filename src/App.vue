@@ -2,6 +2,7 @@
 <script setup>
 import { ref } from "vue" // you need this to use ref()
 
+let name = ref("Name")
 
 </script>
 
@@ -17,6 +18,7 @@ import { ref } from "vue" // you need this to use ref()
         
         <div id="logo">
             <img src="./assets/cow.jpg" alt="macad cow">
+          <h2>{{ name }}</h2>
 
         </div>
         
