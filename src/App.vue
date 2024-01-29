@@ -12,7 +12,10 @@ let name = ref("Mohammad Abid")
 
 // Define functions
 function increment() {
-  count.value++;
+
+console.log(name)
+
+  count.value+=5;
 }
 </script>
 
@@ -29,7 +32,7 @@ with data, objects, functions etc. -->
   <div id="content">
     <!-- First example - button -->
     <!-- Here we define what function will be called when button is clicked. -->
-    <button @click="increment">Add one more</button>
+    <button @click="increment">Add multiples of 5</button>
 
     <!-- Now we print the value. The syntax to print variable is {{ variable_name }}. -->
     <p style="margin-left: 8px">Count is: {{ count }}</p>
