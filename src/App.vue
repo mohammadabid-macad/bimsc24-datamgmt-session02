@@ -8,7 +8,7 @@ let Newname = ref("")
 
 function AddName(){
 
-name.value = name.value + Newname.value
+name.value = name.value + Newname.value + " " 
 console.log (name)
 
 }
@@ -48,7 +48,7 @@ console.log (name)
 
         <div id="main" class="container"> 
            
-          <h2>{{ name }}</h2>
+          <h2>{{name}}</h2>
         </div>
     </div>
 
